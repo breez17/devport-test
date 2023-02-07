@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <TodosField />
+      <ProfileData />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import ProfileData from "@/components/ProfileData.vue";
+import TodosField from "@/components/TodosField.vue";
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
+    TodosField,
+    ProfileData
+  },
 }
 </script>
+
+<style lang="scss">
+.container {
+  padding: 20px 0;
+  max-width: 60%;
+  margin: 0 auto;
+  @media screen and (max-width: 1150px) {
+    max-width: 90%;
+  }
+}
+</style>

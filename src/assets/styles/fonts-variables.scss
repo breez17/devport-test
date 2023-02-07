@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("~@/assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("~@/assets/fonts/Montserrat-Regular.ttf");
+}
+
+$regular: Montserrat-Regular, sans-serif;
+$bolder: Montserrat-bold, sans-serif;
