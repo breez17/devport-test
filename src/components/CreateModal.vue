@@ -102,6 +102,12 @@ export default {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
     transition: all 0.3s ease;
     font-family: Helvetica, Arial, sans-serif;
+    @media screen and (max-width: 550px) {
+      width: 400px;
+    }
+    @media screen and (max-width: 410px) {
+      width: 300px;
+    }
   }
   &-header {
     padding: 20px 10px;
@@ -118,6 +124,9 @@ export default {
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 550px) {
+      gap: 10px;
+    }
     &_cancel {
       height: 30px;
       background: var(--red);

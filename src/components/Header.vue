@@ -68,9 +68,19 @@ export default {
     margin: 0 auto;
     height: 100%;
     justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      margin: 0 0 0 20px;
+      width: 70%;
+    }
+    @media screen and (max-width: 600px) {
+      margin-left: 0;
+    }
   }
   &__title {
     color: var(--white);
+    @media screen and (max-width: 550px) {
+      font-size: 12px;
+    }
   }
   &__logout {
     display: flex;
